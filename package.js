@@ -88,7 +88,6 @@ Package.onUse(function(api) {
   api.add_files(path.join(js_asset_path, 'components', 'slideset.js'), 'client');
 
   // Fonts
-  api.add_files(path.join(asset_path, 'fonts', 'fontawesome-webfont.eot'), 'client');
   api.add_files(path.join(asset_path, 'fonts', 'fontawesome-webfont.ttf'), 'client');
   api.add_files(path.join(asset_path, 'fonts', 'fontawesome-webfont.woff'), 'client');
   api.add_files(path.join(asset_path, 'fonts', 'fontawesome-webfont.woff2'), 'client');

@@ -12,7 +12,6 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
-  api.use('ecmascript');
 
   // Paths
   var path = Npm.require('path');
@@ -46,7 +45,7 @@ Package.onUse(function(api) {
   api.add_files(path.join(css_asset_path, 'components', 'upload.css'), 'client');
 
   // JS
-  ai.add_files(path.join(asset_path, 'js', 'uikit.js'), 'client');
+  api.add_files(path.join(asset_path, 'js', 'uikit.js'), 'client');
 
   api.add_files(path.join(js_asset_path, 'core', 'alert.js'), 'client');
   api.add_files(path.join(js_asset_path, 'core', 'button.js'), 'client');
@@ -97,8 +96,10 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
+  /**
   api.use('ecmascript');
   api.use('tinytest');
   api.use('danybmx:uikit');
   api.addFiles('uikit-tests.js');
+  **/
 });
